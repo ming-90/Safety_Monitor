@@ -1,0 +1,33 @@
+{
+  "model": {
+    "path": "models/yolo11n.onnx",
+    "input_size": 640,
+    "confidence_threshold": 0.35,
+    "nms_threshold": 0.45,
+    "use_demo_detector": false,
+    "class_ids_person": [
+      0
+    ]
+  },
+  "capture": {
+    "mode": "window",
+    "monitor_index": 1,
+    "region": null,
+    "capture_max_fps": 3,
+    "window_id": 18949,
+    "window_owner": "IINA",
+    "window_title": "test_video.mp4"
+  },
+  "hazard_zones": [],
+  "alarm": {
+    "sound_enabled": true,
+    "sound_file": "",
+    "log_path": "logs/events.log",
+    "cooldown_seconds": 2.0,
+    "approach_margin_px": 40.0
+  },
+  "pipeline": {
+    "queue_max_size": 2,
+    "inference_max_fps": 3
+  }
+}
