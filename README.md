@@ -25,9 +25,7 @@
 
 ## 데모 영상
 
-[![제조 현장 안전 모니터 데모 영상](https://img.youtube.com/vi/Sia39VRvavQ/0.jpg)](https://www.youtube.com/embed/Sia39VRvavQ?autoplay=1)
-
-[데모 영상 바로 재생](https://www.youtube.com/embed/Sia39VRvavQ?autoplay=1)
+Segment-Everything web demo ([youtube](https://youtu.be/4_JpPuxxoMw))
 
 ## 요구 사항
 
