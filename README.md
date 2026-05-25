@@ -15,13 +15,19 @@
 
 ## 주요 기능
 
-- YOLO11n ONNX 모델을 이용한 사람 검출
+- YOLO11s ONNX 모델을 이용한 사람 검출
 - 모니터 전체 화면 또는 특정 앱/플레이어 창 캡처
 - 영상 위에 위험 구역 다각형 그리기 및 편집
 - 위험 구역 진입/접근 상태 표시
 - 구역 안에 들어간 detection 박스 빨간색 표시
 - 알람 사운드 및 이벤트 로그 기록
 - 캡처 FPS와 YOLO 추론 FPS 분리 설정
+
+## 데모 영상
+
+[![제조 현장 안전 모니터 데모 영상](https://img.youtube.com/vi/Sia39VRvavQ/0.jpg)](https://www.youtube.com/embed/Sia39VRvavQ?autoplay=1)
+
+[데모 영상 바로 재생](https://www.youtube.com/embed/Sia39VRvavQ?autoplay=1)
 
 ## 요구 사항
 
@@ -52,7 +58,7 @@ make install
 make download-model
 ```
 
-`models/yolo11n.onnx`가 없으면 Ultralytics 공식 assets 릴리스에서 YOLO11n ONNX 모델을 다운로드합니다.
+`models/yolo11s.onnx`가 없으면 Ultralytics 공식 assets 릴리스에서 YOLO11s 체크포인트를 다운로드한 뒤 ONNX로 변환합니다.
 
 ## 실행
 
@@ -82,7 +88,7 @@ make run
 ```json
 {
   "model": {
-    "path": "models/yolo11n.onnx",
+    "path": "models/yolo11s.onnx",
     "input_size": 640,
     "confidence_threshold": 0.35,
     "use_demo_detector": false
@@ -117,7 +123,7 @@ make run
 
 - `make help`: 사용 가능한 명령 출력
 - `make install`: 가상환경 생성 및 의존성 설치
-- `make download-model`: YOLO11n ONNX 모델 다운로드
+- `make download-model`: YOLO11s 체크포인트 다운로드 및 ONNX 변환
 - `make run`: 앱 실행
 - `make clean-venv`: `.venv` 가상환경 삭제
 
