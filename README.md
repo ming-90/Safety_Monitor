@@ -1,3 +1,4 @@
+
 # Safety_Monitor
 # 제조 현장 안전 모니터
 
@@ -26,6 +27,7 @@
 ## 데모 영상
 
 Segment-Everything web demo ([youtube](https://youtu.be/4_JpPuxxoMw))
+<img width="1920" height="1080" alt="sample" src="https://github.com/user-attachments/assets/a03b11ce-2747-4f80-99aa-00fa49f5d1c6" />
 
 ## 요구 사항
 
