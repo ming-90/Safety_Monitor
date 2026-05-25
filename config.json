@@ -1,8 +1,8 @@
 {
   "model": {
-    "path": "models/yolo11n.onnx",
+    "path": "models/yolo11s.onnx",
     "input_size": 640,
-    "confidence_threshold": 0.35,
+    "confidence_threshold": 0.8,
     "nms_threshold": 0.45,
     "use_demo_detector": false,
     "class_ids_person": [
@@ -18,7 +18,34 @@
     "window_owner": "IINA",
     "window_title": "test_video.mp4"
   },
-  "hazard_zones": [],
+  "hazard_zones": [
+    {
+      "id": "4cfb0e37-3c42-4dd6-a3bf-eafa9554e1cb",
+      "name": "구역 1",
+      "enabled": true,
+      "shape": "polygon",
+      "points": [
+        [
+          863.9798866264131,
+          826.1100253725591
+        ],
+        [
+          931.7717272610482,
+          1193.6558164182939
+        ],
+        [
+          1567.132587679856,
+          1140.4335576181911
+        ],
+        [
+          1298.7188945272353,
+          805.2594986510791
+        ]
+      ],
+      "approach_margin_px": 40.0,
+      "color": "#5cb85c"
+    }
+  ],
   "alarm": {
     "sound_enabled": true,
     "sound_file": "",

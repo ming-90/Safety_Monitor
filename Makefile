@@ -9,7 +9,7 @@ help:
 	@echo "사용 가능한 명령:"
 	@echo "  make venv            가상환경 생성"
 	@echo "  make install         의존성 설치"
-	@echo "  make download-model  YOLO11n ONNX 모델 다운로드"
+	@echo "  make download-model  YOLO11s ONNX 모델 다운로드"
 	@echo "  make run             앱 실행"
 	@echo "  make clean-venv      가상환경 삭제"
 
@@ -25,7 +25,7 @@ install: venv
 	$(VENV_PIP) install -r requirements.txt
 
 download-model:
-	$(VENV_PYTHON) scripts/download_yolo11n_onnx.py
+	$(VENV_PYTHON) scripts/download_yolo11s_onnx.py
 
 run:
 	$(VENV_PYTHON) -m safety_monitor
